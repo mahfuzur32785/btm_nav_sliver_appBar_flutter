@@ -30,23 +30,23 @@ class _NavbarHomeState extends State<NavbarHome> {
         selectedIndex: currentIndex,
         items: [
           FlipBarItem(
-              icon: Icon(Icons.map, size:40, color: currentIndex==0 ? Colors.red:Colors.black,),
-              text: Text("Map"),
+              icon: Icon(Icons.home, size:40, color: currentIndex==0 ? Colors.red:Colors.black,),
+              text: Text("Home"),
               frontColor: Colors.blue,
               backColor: Colors.blueAccent),
           FlipBarItem(
-              icon: Icon(Icons.add, size:40, color: currentIndex==1 ? Colors.red:Colors.black,),
-              text: Text("Add"),
+              icon: Icon(Icons.production_quantity_limits, size:40, color: currentIndex==1 ? Colors.red:Colors.black,),
+              text: Text("Products"),
               frontColor: Colors.cyan,
               backColor: Colors.cyanAccent),
           FlipBarItem(
-              icon: Icon(Icons.chrome_reader_mode,size:40, color: currentIndex==2 ? Colors.red:Colors.black,),
-              text: Text("Read"),
+              icon: Icon(Icons.category,size:40, color: currentIndex==2 ? Colors.red:Colors.black,),
+              text: Text("Category"),
               frontColor: Colors.orange,
               backColor: Colors.orangeAccent),
           FlipBarItem(
-              icon: Icon(Icons.print, size:40, color: currentIndex==3 ? Colors.red:Colors.black,),
-              text: Text("Print"),
+              icon: Icon(Icons.person, size:40, color: currentIndex==3 ? Colors.red:Colors.black,),
+              text: Text("Profile"),
               frontColor: Colors.purple,
               backColor: Colors.green),
         ],
