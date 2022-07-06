@@ -34,8 +34,15 @@ class _Sliver_App_BarState extends State<Sliver_App_Bar> {
               shrinkWrap: true,
                 itemCount: _products.length,
                 itemBuilder: (context, index){
-                  return ListTile(
-                    title: Text(_products[index]),
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(
+                      shadowColor: Colors.black,
+                      elevation: 5,
+                      child: ListTile(
+                        title: Text(_products[index]),
+                      ),
+                    ),
                   );
                 }
             ),
